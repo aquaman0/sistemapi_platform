@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/home', [SPController::class, 'index']) -> name('home.index');
+Route::get('/', [SPController::class, 'index']) -> name('home.index');
 Route::post('/play', [SPController::class, 'play']) -> name('home.play');
 
 Route::get('/meet/{city}', [MeetController::class, 'index']) -> name('meet.index');
